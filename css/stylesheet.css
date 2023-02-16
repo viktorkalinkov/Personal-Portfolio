@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+/* Variables */
+:root {
+	--colors-background-dark: #444;
+	--colors-background-light: #ffff;
+	--colors-text-light: #fff;
+	--colors-text-highlight: #456ebf;
+	--colors-text-dark: #000;
+	--fonts-normal-text: "Quicksand", sans-serif;
+}
+
+/* Small resets */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body,
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Main elements */
+body {
+	background: #161616;
+	background-size: cover;
+	font-family: var(--fonts-normal-text);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--colors-text-light);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+main {
+	margin-bottom: 10px;
+}
+
+main strong {
+	display: inline-block;
+	padding: 10px;
+	background-color: var(--colors-text-highlight);
+	color: var(--colors-text-light);
+	border-radius: 5px;
+}
+
+footer {
+	font-size: 0.85em;
+}
+
+/* Other elements */
+#website_container {
+	width: 310px;
+	height: 100vh;
+	text-align: center;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+#website_container .content {
+	border-radius: 15px;
+	background-color: var(--colors-background-light);
+	color: var(--colors-text-dark);
+	padding: 15px;
+	overflow: hidden;
+}
+
+
+/* Navigation bar */
+
+.navigationMenu a {
+	color: #f6f4e6;
+	text-decoration: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: inline-block;
+	width: 80px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.navigationMenu a:hover {
+	color: #aa76b7;
+}
+
+.navigationMenu .dot {
+	width: 6px;
+	height: 6px;
+	background: #aa76b7;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transform: translateX(30px);
+	transform: translateX(30px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navigationMenu a:nth-child(1):hover~.dot {
+	-webkit-transform: translateX(820px);
+	transform: translateX(820px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+}
+
+.navigationMenu a:nth-child(2):hover~.dot {
+	-webkit-transform: translateX(905px);
+	transform: translateX(905px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+}
+
+.navigationMenu a:nth-child(3):hover~.dot {
+	-webkit-transform: translateX(990px);
+	transform: translateX(990px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+}
+
+.navigationMenu a:nth-child(4):hover~.dot {
+	-webkit-transform: translateX(1075px);
+	transform: translateX(1075px);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+}
+
+
+
+
+
+
+#home {
+	height: 100%;
+	max-height: 802px;
+	margin-top: 7%;
+	/* margin-top: 0!important; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    height: fit-content;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button need to be replaced */
+
+/* Button effect */
+
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #FFF;
+	padding: 40px 0px;
+	width: 240px;
+}
+
+h1 {
+	color: #444;
+	letter-spacing: 0.05em;
+	margin: 0 0 0.4em;
+	font-size: 1em;
+}
+
+p {
+	color: #444;
+	letter-spacing: 0.05em;
+	font-size: 0.8em;
+	margin: 0 0 2em;
+}
+
+
+.btn {
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 45px;
+	max-width: 160px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.btn:hover {
+	text-decoration: none;
+}
+
+/*btn_background*/
+.effect04 {
+	--uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+	display: var(--uismLinkDisplay);
+	color: #000;
+	outline: solid 2px #000;
+	position: relative;
+	transition-duration: 0.4s;
+	overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+	margin: 0 auto;
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.effect04:hover {
+
+	background-color: #000;
+}
+
+/* HOVERしたら文字1を上に */
+.effect04:hover span {
+	-webkit-transform: translateY(-400%) scale(-0.1, 20);
+	transform: translateY(-400%) scale(-0.1, 20);
+}
+
+/*文字2*/
+.effect04::before {
+	content: attr(data-sm-link-text);
+	color: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	-webkit-transform: translateY(500%) scale(-0.1, 20);
+	transform: translateY(500%) scale(-0.1, 20);
+}
+
+/* HOVERしたら文字2を上に */
+.effect04:hover::before {
+	letter-spacing: 0.05em;
+	-webkit-transform: translateY(0) scale(1, 1);
+	transform: translateY(0) scale(1, 1);
+}
